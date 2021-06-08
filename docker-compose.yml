@@ -6,7 +6,7 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     volumes:
-        - ./etc:/etc/mysql/conf.d
+    volumes:
         - ./mysql:/var/lib/mysql
     ports:
       - 3307:3306
